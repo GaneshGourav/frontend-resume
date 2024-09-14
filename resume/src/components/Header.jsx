@@ -1,5 +1,5 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import React, { useEffect } from "react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneAlt, FaLinkedin, FaBook } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";

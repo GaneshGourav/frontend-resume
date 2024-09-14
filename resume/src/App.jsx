@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import ContactForm from "./components/ContactForm";
@@ -57,8 +58,8 @@ function App() {
         <Portfolio />
         <References />
         <ContactForm />
-        <Map/>
-        <Footer/>
+        <Map />
+        <Footer />
       </div>
       <button onClick={generatePDF} className="pdf-button">
         Download Resume as PDF

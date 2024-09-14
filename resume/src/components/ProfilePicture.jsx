@@ -1,5 +1,5 @@
-import { Box } from "@chakra-ui/react";
 import React from "react";
+import { Box } from "@chakra-ui/react";
 import photo from "../assets/Ganesh_Photo.jpeg";
 
 function ProfilePicture() {

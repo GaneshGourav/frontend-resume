@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import {
   Box,
   Button,
@@ -8,7 +9,7 @@ import {
   FormErrorMessage,
   FormControl,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import emailjs from "emailjs-com";

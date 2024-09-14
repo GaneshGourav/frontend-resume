@@ -1,5 +1,5 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -32,7 +32,6 @@ function Education() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out-cubic"
-          // className="custom-slide-up"
           className="heading-animation"
         >
           Education

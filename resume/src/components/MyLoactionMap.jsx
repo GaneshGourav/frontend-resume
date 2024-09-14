@@ -1,5 +1,5 @@
-import { Box, Heading, Spinner, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { Box, Heading, Spinner, Text } from "@chakra-ui/react";
 
 function Map() {
   const [isLoading, setIsLoading] = useState(true);
