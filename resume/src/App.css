@@ -12,3 +12,25 @@
 .heading-animation {
   animation: slideInFromTop 1s ease-out;
 }
+.pdf-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pdf-button:hover {
+  background-color: #006666;
+  transform: scale(1.05);
+}
+
+.pdf-button:active {
+  transform: scale(1);
+}

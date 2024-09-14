@@ -20,6 +20,7 @@ function Education() {
         m={"auto"}
         mt={"30px"}
         mb={"30px"}
+        id="education"
       >
         <Heading
           fontWeight={"500"}

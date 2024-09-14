@@ -20,6 +20,7 @@ function AboutMe() {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-easing="ease-out-cubic"
+        id="about"
       >
         <Heading
           fontWeight={"500"}
@@ -36,6 +37,7 @@ function AboutMe() {
           fontSize={{ base: "14px", sm: "16px", md: "18px" }}
           mb={"20px"}
           lineHeight="1.6"
+          fontStyle="italic"
         >
           A dynamic Full Stack Developer with expertise in the MERN stack,
           specializing in building scalable, high-performance web applications.

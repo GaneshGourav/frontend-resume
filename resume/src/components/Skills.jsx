@@ -81,6 +81,7 @@ function Skills() {
         m={"auto"}
         mt={"40px"}
         mb={"40px"}
+        id="skills"
         overflowX="hidden"
         overflowY="hidden"
       >
@@ -106,7 +107,11 @@ function Skills() {
           overflow="hidden"
         >
           {Skills.map((skill) => (
-            <Tooltip label={skill.level} aria-label={skill.arialLabel}>
+            <Tooltip
+              label={skill.level}
+              aria-label={skill.arialLabel}
+              key={skill.title}
+            >
               <Box
                 p="20px"
                 w={{ base: "100%", sm: "80%", md: "100%", lg: "70%" }}
@@ -121,6 +126,7 @@ function Skills() {
                   transition: "all 0.3s ease",
                 }}
                 data-aos="fade-up"
+                transition="all 0.3s ease"
               >
                 <skill.logo
                   fontSize={"65px"}

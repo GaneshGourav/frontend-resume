@@ -17,10 +17,12 @@ function Header() {
     <header>
       <Box
         display={"flex"}
+        id="home"
         flexDirection={{ base: "column", md: "row" }}
         justifyContent={"center"}
         alignItems={"center"}
         m={"auto"}
+        mt={"60px"}
         gap={{ base: "20px", md: "40px" }}
         width={{ base: "95%", md: "80%" }}
         textAlign={{ base: "center", md: "left" }}
@@ -36,20 +38,25 @@ function Header() {
             size="2xl"
             mb={2}
             color={"teal.500"}
-            className="heading-animation" 
+            className="heading-animation"
           >
             Ganesh Kumar
           </Heading>
-          <Text fontWeight={"600"} mb={4} data-aos="fade-up">
+          <Text fontWeight={"600"} fontStyle="italic" mb={4} data-aos="fade-up">
             Full Stack Developer (MERN Stack)
           </Text>
           <Box data-aos="fade-up" mb={4}>
             <Flex
-              direction={{ base: "column", md: "column",lg:"row","2xl":"row" }}
+              direction={{
+                base: "column",
+                md: "column",
+                lg: "row",
+                "2xl": "row",
+              }}
               gap={3}
               color={"grey"}
             >
-              <Flex alignItems={"center"} gap={"10px"}  >
+              <Flex alignItems={"center"} gap={"10px"}>
                 <CiLocationOn />
                 <Text>Hansdiha, Jharkhand-814145</Text>
               </Flex>

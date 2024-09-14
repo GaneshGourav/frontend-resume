@@ -61,7 +61,14 @@ function Portfolio() {
 
   return (
     <>
-      <Box w={"80%"} m={"auto"} mt={"40px"} mb={"40px"} overflow="hidden">
+      <Box
+        w={"80%"}
+        m={"auto"}
+        mt={"40px"}
+        mb={"40px"}
+        id="portfolio"
+        overflow="hidden"
+      >
         <Heading
           fontWeight={"500"}
           fontSize={{ base: "20px", sm: "22px" }}
@@ -93,6 +100,7 @@ function Portfolio() {
               w={"100%"}
               overflow="hidden"
               data-aos="fade-right"
+              key={project.title}
               _hover={{
                 transform: "scale(2.5)",
                 transition: "0.3s ease-in-out",
@@ -123,7 +131,9 @@ function Portfolio() {
               >
                 {project.title}
               </Heading>
-              <Text mb={"20px"}>{project.description}</Text>
+              <Text mb={"20px"} fontStyle="italic">
+                {project.description}
+              </Text>
               <Flex justifyContent={"space-between"}>
                 <Link href={project.liveLink} isExternal>
                   <Button colorScheme="teal" size="md">
