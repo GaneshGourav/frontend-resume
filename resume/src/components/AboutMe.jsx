@@ -1,26 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-// import AOS from "aos";
-import AOS from "aos"
-import "aos/dist/aos.css";
+
 import "../App.css";
 
 function AboutMe() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-    });
-  }, []);
   return (
     <>
       <Box
         w={{ base: "90%", sm: "80%", md: "80%", lg: "80%" }}
         m={"auto"}
         p={{ base: "10px", sm: "20px", md: "30px", lg: "40px" }}
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-out-cubic"
         id="about"
       >
         <Heading

@@ -1,18 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneAlt, FaLinkedin, FaBook } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import ProfilePicture from "./ProfilePicture";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import "../App.css";
 
 function Header() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <header>
       <Box
@@ -27,12 +22,8 @@ function Header() {
         width={{ base: "95%", md: "80%" }}
         textAlign={{ base: "center", md: "left" }}
       >
-        <ProfilePicture
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-duration="1000"
-        />
-        <Box width={"100%"} data-aos="fade-left">
+        <ProfilePicture />
+        <Box width={"100%"}>
           <Heading
             as="h1"
             size="2xl"
@@ -42,10 +33,10 @@ function Header() {
           >
             Ganesh Kumar
           </Heading>
-          <Text fontWeight={"600"} fontStyle="italic" mb={4} data-aos="fade-up">
+          <Text fontWeight={"600"} fontStyle="italic" mb={4} >
             Full Stack Developer (MERN Stack)
           </Text>
-          <Box data-aos="fade-up" mb={4}>
+          <Box  mb={4}>
             <Flex
               direction={{
                 base: "column",
