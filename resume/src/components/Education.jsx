@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../style/Education.css";
+import "../App.css";
 
 function Education() {
   useEffect(() => {
@@ -31,7 +32,8 @@ function Education() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-out-cubic"
-          className="custom-slide-up"
+          // className="custom-slide-up"
+          className="heading-animation"
         >
           Education
         </Heading>
@@ -71,10 +73,14 @@ function Education() {
             <Heading fontSize={{ base: "16px", sm: "18px" }} mb={"10px"}>
               Full Stack Web Development (Full time)
             </Heading>
-            <Text fontSize={{ base: "14px", sm: "16px" }} mb={"5px"}>
+            <Text
+              fontSize={{ base: "14px", sm: "16px" }}
+              fontStyle={"italic"}
+              mb={"5px"}
+            >
               Masai School, Bengaluru
             </Text>
-            <Text fontSize={{ base: "14px", sm: "16px" }}>
+            <Text fontSize={{ base: "14px", sm: "16px" }} fontStyle={"italic"}>
               Frontend and Backend
             </Text>
           </VerticalTimelineElement>
@@ -113,7 +119,7 @@ function Education() {
             <Heading fontSize={{ base: "16px", sm: "18px" }} mb={"10px"}>
               Electrical and Electronics Engineering, B.E
             </Heading>
-            <Text fontSize={{ base: "14px", sm: "16px" }}>
+            <Text fontSize={{ base: "14px", sm: "16px" }} fontStyle={"italic"}>
               SRS College of Engineering and Technology
             </Text>
           </VerticalTimelineElement>

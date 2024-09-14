@@ -88,6 +88,15 @@ function References() {
           ))}
         </Stack>
       </Box>
+
+      <hr
+        style={{
+          marginTop: "10px",
+          width: "80%",
+          margin: "10px auto",
+          borderColor: "#ccc",
+        }}
+      />
     </>
   );
 }

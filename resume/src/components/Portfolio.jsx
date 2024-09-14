@@ -77,7 +77,7 @@ function Portfolio() {
           data-aos="fade-up"
           color={"teal.500"}
         >
-          PORTFOLIO
+          Portfolio
         </Heading>
 
         <Grid

@@ -59,6 +59,7 @@ const NavBar = () => {
               fontWeight="bold"
               mx="4"
               cursor="pointer"
+              _hover={{ color: "black", transition: "0.3s ease-in" }}
               onClick={onClose} // Close drawer on clicking link
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

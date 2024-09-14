@@ -12,6 +12,8 @@ import Skills from "./components/Skills";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { useRef } from "react";
+import Map from "./components/MyLoactionMap";
+import Footer from "./components/Footer";
 
 function App() {
   const pdfRef = useRef();
@@ -55,6 +57,8 @@ function App() {
         <Portfolio />
         <References />
         <ContactForm />
+        <Map/>
+        <Footer/>
       </div>
       <button onClick={generatePDF} className="pdf-button">
         Download Resume as PDF
